@@ -19,7 +19,7 @@ func Print(msg ...interface{}) {
 }
 
 func Printf(format string, msg ...interface{}) {
-	getLogger().Printf(format, msg)
+	getLogger().Printf(format, msg...)
 }
 
 func Error(msg ...interface{}) {
@@ -27,7 +27,7 @@ func Error(msg ...interface{}) {
 }
 
 func Errorf(format string, msg ...interface{}) {
-	getLogger().Errorf(format, msg)
+	getLogger().Errorf(format, msg...)
 }
 
 func Info(msg ...interface{}) {
@@ -35,7 +35,7 @@ func Info(msg ...interface{}) {
 }
 
 func Infof(format string, msg ...interface{}) {
-	getLogger().Infof(format, msg)
+	getLogger().Infof(format, msg...)
 }
 
 func Debug(msg ...interface{}) {
@@ -43,7 +43,7 @@ func Debug(msg ...interface{}) {
 }
 
 func Debugf(format string, msg ...interface{}) {
-	getLogger().Debugf(format, msg)
+	getLogger().Debugf(format, msg...)
 }
 
 func Warn(msg ...interface{}) {
@@ -51,7 +51,7 @@ func Warn(msg ...interface{}) {
 }
 
 func Warnf(format string, msg ...interface{}) {
-	getLogger().Warnf(format, msg)
+	getLogger().Warnf(format, msg...)
 }
 
 func Trace(msg ...interface{}) {
@@ -59,7 +59,7 @@ func Trace(msg ...interface{}) {
 }
 
 func Tracef(format string, msg ...interface{}) {
-	getLogger().Tracef(format, msg)
+	getLogger().Tracef(format, msg...)
 }
 
 func Fatal(msg ...interface{}) {
@@ -67,7 +67,7 @@ func Fatal(msg ...interface{}) {
 }
 
 func Fatalf(format string, msg ...interface{}) {
-	getLogger().Fatalf(format, msg)
+	getLogger().Fatalf(format, msg...)
 }
 
 func Panic(msg ...interface{}) {
@@ -75,5 +75,5 @@ func Panic(msg ...interface{}) {
 }
 
 func Panicf(format string, msg ...interface{}) {
-	getLogger().Panicf(format, msg)
+	getLogger().Panicf(format, msg...)
 }
